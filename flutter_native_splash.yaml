@@ -1,0 +1,17 @@
+flutter_native_splash:
+  color: "#ebdb34"
+  #image: assets/splash/light.png
+  image: assets/LOGO/pen.png
+  color_dark: "#1c1c1b"
+  #image_dark: assets/splash/black.png
+  image_dark: assets/LOGO/pen.png
+
+android_12:
+  color: "#ebdb34"
+  image: assets/LOGO/pen.png
+  #image: assets/splash/light.png
+  color_dark: "#1c1c1b"
+  #image_dark: assets/splash/black.png
+  image_dark: assets/LOGO/pen.png
+
+web: false

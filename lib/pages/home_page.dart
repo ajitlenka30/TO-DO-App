@@ -25,7 +25,6 @@ class _HomePageState extends State<HomePage> {
       // there already exists data
       db.loadData();
     }
-
     super.initState();
   }
 
@@ -77,8 +76,11 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.yellow[200],
       appBar: AppBar(
-        title: Center(child: const Text('TO DO')),
-        backgroundColor: Colors.yellow,
+        title: Padding(
+          padding: const EdgeInsets.all(10),
+          child: const Text('TO DO'),
+        ),
+        backgroundColor: Colors.yellow[300],
         elevation: 1,
       ),
       floatingActionButton: Padding(
@@ -87,7 +89,7 @@ class _HomePageState extends State<HomePage> {
         ),
         child: FloatingActionButton(
           onPressed: createNewTask,
-          backgroundColor: Colors.yellow,
+          backgroundColor: Colors.yellow[300],
           child: const Icon(Icons.edit_note_rounded, color: Colors.white,),
         ),
       ),

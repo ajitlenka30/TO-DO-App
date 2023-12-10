@@ -8,7 +8,6 @@ void main() async {
 
   // open a box
   var box = await Hive.openBox('mybox');
-
   runApp(const MyApp());
 }
 
@@ -20,7 +19,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: const HomePage(),
-      theme: ThemeData(primarySwatch: Colors.orange)
     );
   }
 }
